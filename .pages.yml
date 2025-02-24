@@ -19,11 +19,15 @@ content:
       - { name: description, label: Description, type: string, options: { maxlength: 180 }}
       - { name: order, label: Order, type: number }
       - { name: body, label: Body, type: rich-text }
+
+
+      
   - label: Home page
     path: src/index.njk
     name: homepage
     type: file
     fields:
+      - { name: color, type: color, }
       - { name: layout, type: string, hidden: true, default: layouts/base.njk }
       - name: promotion
         label: Promotion
