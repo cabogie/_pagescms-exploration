@@ -28,6 +28,7 @@ content:
     type: file
     fields:
       - { name: color, type: color, }
+      - { name: number, type: number, }
       - { name: layout, type: string, hidden: true, default: layouts/base.njk }
       - name: promotion
         label: Promotion
