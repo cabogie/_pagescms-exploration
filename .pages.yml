@@ -36,6 +36,7 @@ content:
               - { name: Somehting 2, data: some datawaaa2! }
           - { name: Item 2, data: some data! }
           - { name: Item 3, data: other data, color: true }
+      - { name: md, type: rich-text, }
       - { name: color, type: color, }
       - name: colors
         label: Colors
