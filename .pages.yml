@@ -27,18 +27,6 @@ content:
     name: homepage
     type: file
     fields:
-      - name: otios
-        type: select
-        options:
-          values:
-          - value: 
-              - name: BOB
-              - height: 5ft9
-            label: Bob Smith
-          - value: patricia
-            label: Patricia Wills
-          - value: alice
-            label: Alice Brown
       - name: dropdown
         type: dropdown
         items: 
