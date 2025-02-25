@@ -28,6 +28,12 @@ content:
     type: file
     fields:
       - { name: color, type: color, }
+      - name: colors
+        label: Colors
+        type: object
+        fields:
+          - { name: name, type: string, }
+          - { name: color, type: color, }
       - { name: number, type: number, }
       - { name: layout, type: string, hidden: true, default: layouts/base.njk }
       - name: promotion
