@@ -27,7 +27,7 @@ content:
     name: homepage
     type: file
     fields:
-      - name: color
+      - name: dropdown
         type: dropdown
         items: 
           - { name: Item 3 }
