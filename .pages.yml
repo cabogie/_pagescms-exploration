@@ -27,6 +27,11 @@ content:
     name: homepage
     type: file
     fields:
+      - name: color
+        type: dropdown
+        items: 
+          - { name: Item 3 }
+          - { name: Item 2 }
       - { name: color, type: color, }
       - name: colors
         label: Colors
