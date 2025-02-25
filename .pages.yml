@@ -31,7 +31,9 @@ content:
         type: select
         options:
           values:
-          - value: bob
+          - value: 
+              - name: BOB
+              - height: 5ft9
             label: Bob Smith
           - value: patricia
             label: Patricia Wills
