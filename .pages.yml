@@ -30,8 +30,8 @@ content:
       - name: dropdown
         type: dropdown
         items: 
-          - { name: Item 3 }
-          - { name: Item 2 }
+          - { name: Item 3, data: some data! }
+          - { name: Item 2, data: other data, color: true }
       - { name: color, type: color, }
       - name: colors
         label: Colors
