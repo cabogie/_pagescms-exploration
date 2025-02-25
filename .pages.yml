@@ -36,13 +36,7 @@ content:
             - {value: item3, label: Item 3 } 
       - name: dropdown
         type: dropdown
-        items: 
-          - name: Item 1 
-            something: 
-              - { name: Something 1, data: some datwawaa2! }
-              - { name: Somehting 2, data: some datawaaa2! }
-          - { name: Item 2, data: some data! }
-          - { name: Item 3, data: other data, color: true }
+        path: src/docs
       - { name: md, type: rich-text, }
       - { name: color, type: color, }
       - name: colors
