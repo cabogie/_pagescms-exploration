@@ -71,8 +71,8 @@ content:
       - name: dropdownValues
         type: dropdown
         options: 
-          data:
-            - {value: item1, label: Item 1, other: A } 
+          values:
+            - {value: {other: item1, test: A}, label: Item 1, other: A } 
             - {value: item2, label: Item 2, test: B } 
             - {value: item3, label: Item 3, lol: C } 
       - name: dropdownStrings
