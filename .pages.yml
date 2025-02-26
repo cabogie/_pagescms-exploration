@@ -38,7 +38,17 @@ content:
           collection:
             path: src/docs
             name: docs
-            recursive: true
+      - name: dropdownValues
+        type: dropdown
+        options: 
+          values:
+            - {value: item1, label: Item 1, other: A } 
+            - {value: item2, label: Item 2, test: B } 
+            - {value: item3, label: Item 3, lol: C } 
+      - name: dropdownStrings
+        type: dropdown
+        options: 
+          values: [Item 1, Item 2,  Item 3] 
       - { name: md, type: rich-text, }
       - { name: color, type: color, }
       - name: colors
