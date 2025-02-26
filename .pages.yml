@@ -21,7 +21,7 @@ content:
       - { name: body, label: Body, type: rich-text }
 
   - name: docs
-    label: Documentation
+    label: Documentation2
     type: collection
     path: src/docs2
     filename: "{primary}.md"
