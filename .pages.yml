@@ -67,8 +67,7 @@ content:
         type: dropdown
         options: 
           collection:
-            path: ""
-            name: "docs"
+            name: docs
       - name: dropdownValues
         type: dropdown
         options: 
