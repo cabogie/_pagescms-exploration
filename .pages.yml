@@ -32,6 +32,12 @@ content:
             - {value: item1, label: Item 1 } 
             - {value: item2, label: Item 2 } 
             - {value: item3, label: Item 3 } 
+      - name: dropdownCollection
+        type: dropdown
+        options: 
+          collection:
+            path: src/docs
+            name: docs
       - { name: md, type: rich-text, }
       - { name: color, type: color, }
       - name: colors
