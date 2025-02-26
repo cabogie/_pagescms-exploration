@@ -20,6 +20,11 @@ content:
       - { name: order, label: Order, type: number }
       - { name: body, label: Body, type: rich-text }
 
+  - name: docs
+    label: Documentation
+    type: collection
+    path: src/docs2
+    filename: "{primary}.md"
 
       
   - label: Home page
