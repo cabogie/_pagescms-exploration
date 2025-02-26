@@ -18,13 +18,6 @@ content:
       - { name: title, label: Title, type: string, required: true }
       - { name: description, label: Description, type: string, options: { maxlength: 180 }}
       - { name: order, label: Order, type: number }
-      - name: fav-color
-        label: Favourite Colour
-        type: dropdown
-        options: 
-          collection:
-            path: src/colors
-            name: colors
       - { name: body, label: Body, type: rich-text }
 
   - name: colors
@@ -48,6 +41,13 @@ content:
     fields:
       - { name: name, label: Name, type: string, required: true }
       - { name: photo, label: Image, type: image }
+      - name: fav-color
+        label: Favourite Colour
+        type: dropdown
+        options: 
+          collection:
+            path: src/colors
+            name: colors
       - { name: description, label: Description, type: text }
       - { name: body, label: Bio, type: rich-text }
 
