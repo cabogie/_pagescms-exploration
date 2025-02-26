@@ -38,6 +38,7 @@ content:
           collection:
             path: src/docs
             name: docs
+            recursive: true
       - { name: md, type: rich-text, }
       - { name: color, type: color, }
       - name: colors
