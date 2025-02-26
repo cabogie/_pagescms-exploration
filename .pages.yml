@@ -67,12 +67,12 @@ content:
         type: dropdown
         options: 
           collection:
-            path: src/docs
-            name: docs
+            path: ""
+            name: "docs"
       - name: dropdownValues
         type: dropdown
         options: 
-          values:
+          data:
             - {value: item1, label: Item 1, other: A } 
             - {value: item2, label: Item 2, test: B } 
             - {value: item3, label: Item 3, lol: C } 
