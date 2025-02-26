@@ -33,7 +33,7 @@ content:
     path: src/colors
     filename: "color_{primary}.md"
     view:
-      fields: [ title ]
+      fields: [ color, title ]
     fields:
       - { name: title, label: Title, type: string, required: true }
       - { name: color, label: Color, type: color}
