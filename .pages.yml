@@ -36,7 +36,7 @@ content:
             - {value: item3, label: Item 3 } 
       - name: dropdown
         type: dropdown
-        path: src/docs
+        name: docs
       - { name: md, type: rich-text, }
       - { name: color, type: color, }
       - name: colors
