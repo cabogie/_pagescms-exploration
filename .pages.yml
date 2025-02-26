@@ -20,7 +20,7 @@ content:
       - { name: order, label: Order, type: number }
       - { name: body, label: Body, type: rich-text }
 
-  - name: docs
+  - name: docs2
     label: Documentation2
     type: collection
     path: src/docs2
