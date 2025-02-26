@@ -68,6 +68,7 @@ content:
         options: 
           collection:
             name: docs
+            recursive: true
       - name: dropdownValues
         type: dropdown
         options: 
