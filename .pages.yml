@@ -18,9 +18,15 @@ content:
       - { name: title, label: Title, type: string, required: true }
       - { name: description, label: Description, type: string, options: { maxlength: 180 }}
       - { name: order, label: Order, type: number }
+      - name: fav-color
+        label: Favourite Colour
+        type: dropdown
+        options: 
+          collection:
+            path: src/colors
+            name: colors
       - { name: body, label: Body, type: rich-text }
 
-      
   - name: colors
     label: Colors
     type: collection
