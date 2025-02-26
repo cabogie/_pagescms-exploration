@@ -24,7 +24,7 @@ content:
     label: Documentation2
     type: collection
     path: src/docs2
-    filename: "{primary}.md"
+    filename: "{primary}x.md"
 
       
   - label: Home page
