@@ -69,6 +69,7 @@ content:
           collection:
             name: docs
             recursive: true
+            labelKey: title
       - name: dropdownValues
         type: dropdown
         options: 
