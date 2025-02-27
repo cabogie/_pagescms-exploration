@@ -70,6 +70,14 @@ content:
             name: docs
             recursive: true
             labelKey: title
+            
+      - name: bgcolor
+        type: dropdown
+        options: 
+          collection:
+            name: colors
+            labelKey: title
+            
       - name: dropdownValues
         type: dropdown
         options: 
