@@ -73,6 +73,8 @@ content:
             
       - name: bgcolor
         type: dropdown
+        label: Color
+        description: Select a color for the background!
         options: 
           collection:
             name: colors
