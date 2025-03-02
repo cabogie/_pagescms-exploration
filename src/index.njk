@@ -5,51 +5,74 @@ dropdownValues: |
   other: item1
   test: A
 dropdownStrings: Item 2
-md: >
-  ## Useful Public Utils
+md: >-
+  ## Useful Public Utils a
 
 
-  - `{cs}AnimationRuntimeUtils`
-      - solve two bone, fabrik, etc
-      - requires animation stream
-  - Property Binding Helpers
-      - `{cs}BoolProperty`
-      - `{cs}FloatProperty`
-      - `{cs}IntProperty`
-      - `{cs}Vector2Property`
-  - etc
+  *   `{cs}AnimationRuntimeUtils`
+      
+      *   solve two bone, fabrik, etc
+          
+      *   requires animation stream
 
+          
+  *   Property Binding Helpers
+      
+      *   `{cs}BoolProperty`
+          
+      *   `{cs}FloatProperty`
+          
+      *   `{cs}IntProperty`
+          
+      *   `{cs}Vector2Property`
+
+          
+  *   etc
+      
 
   ## Rig Builder
 
 
-  - Rig Builder has a list of "Layers"
+  *   Rig Builder has a list of "Layers"
+      
+  *   "Layers" in inspector are "Rig"s
+      
+  *   Children of theses Rigs are built up of Monobehaviour Constraints
+      
+      *   these have a binder, data etc
+          
+      *   these use the binder to provide a constraint
+          
+          *   this creates the job with the data
+              
+      *   so basically, to create a new mono constraint, **define a binder, data, and job**
 
-  - "Layers" in inspector are "Rig"s
-
-  - Children of theses Rigs are built up of Monobehaviour Constraints
-      - these have a binder, data etc
-      - these use the binder to provide a constraint
-          - this creates the job with the data
-      - so basically, to create a new mono constraint, **define a binder, data, and job**
-  - Rig Builder goes through rig layers (rigs)
-
-  - these look for constraints (IRigConstraint) in children and serialize them
+          
+  *   Rig Builder goes through rig layers (rigs)
+      
+  *   these look for constraints (IRigConstraint) in children and serialize them
   into a list
-      - this is done with helper `RigUtils.GetConstraints(rig)`
-  - the list is copied as an array
+      
+      *   this is done with helper `RigUtils.GetConstraints(rig)`
 
-  - this array is sent to `RigBuilderUtils.BuildPlayableGraph(animator,
+          
+  *   the list is copied as an array
+      
+  *   this array is sent to `RigBuilderUtils.BuildPlayableGraph(animator,
   m_RuntimeRigLayers, syncSceneToStreamLayer)`
-      - this converts the list of constraints to a list of playables to build into a graph
-  - Base RigConstraint<> internally update the data passed to the IAnimatorJob
-      - When you create your own, you implement UpdateJob which does it for you.
+      
+      *   this converts the list of constraints to a list of playables to build into a graph
 
+          
+  *   Base RigConstraint<> internally update the data passed to the IAnimatorJob
+      
+      *   When you create your own, you implement UpdateJob which does it for you.
 
-  - see [[#Building the Graph|graph]]
+          
+  *   see \[\[#Building the Graph|graph\]\]
+      
 
-
-  ```cs title:Layer
+  ```cs
 
   public interface IRigLayer
 
