@@ -8,7 +8,9 @@ dropdownStrings: Item 2
 md: >-
   ## Useful Public Utils aawdwadaw
 
+
   d
+
 
   *   `{cs}AnimationRuntimeUtils`
       
@@ -45,7 +47,6 @@ md: >-
       *   these use the binder to provide a constraint
           
           *   this creates the job with the data
-              
       *   so basically, to create a new mono constraint, **define a binder, data, and job**
 
           
@@ -55,21 +56,15 @@ md: >-
   into a list
       
       *   this is done with helper `RigUtils.GetConstraints(rig)`
-
-          
   *   the list is copied as an array
       
   *   this array is sent to `RigBuilderUtils.BuildPlayableGraph(animator,
   m_RuntimeRigLayers, syncSceneToStreamLayer)`
       
       *   this converts the list of constraints to a list of playables to build into a graph
-
-          
   *   Base RigConstraint<> internally update the data passed to the IAnimatorJob
       
       *   When you create your own, you implement UpdateJob which does it for you.
-
-          
   *   see \[\[#Building the Graph|graph\]\]
       
 
